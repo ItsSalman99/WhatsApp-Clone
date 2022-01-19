@@ -12,6 +12,12 @@ target 'WhatsAppClone' do
     :hermes_enabled => false
   )
 
+  pod 'react-native-splash-screen', :path => '../node_modules/react-native-splash-screen'
+
+  pod 'react-native-camera', :path => '../node_modules/react-native-camera'
+
+  pod 'react-native-cameraroll', :path => '../node_modules/@react-native-community/cameraroll'
+
   target 'WhatsAppCloneTests' do
     inherit! :complete
     # Pods for testing

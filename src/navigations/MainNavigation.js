@@ -5,6 +5,8 @@ import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import TabNavigation from "./TabNavigation";
 import Icon  from "react-native-vector-icons/MaterialCommunityIcons";
 import Icon2  from "react-native-vector-icons/Fontisto";
+import GalleryScreen from "../screens/GalleryScreen";
+import Chat from "../screens/Chat";
 
 const Stack = createNativeStackNavigator();
 
@@ -27,6 +29,8 @@ const MainNavigation = () => {
                 }
             }}>
                 <Stack.Screen name="WhatsApp" component={TabNavigation}/>
+                <Stack.Screen name="Gallery" component={GalleryScreen}/>
+                <Stack.Screen name="Chat" component={Chat}/>
             </Stack.Navigator>
         </NavigationContainer>
     )
